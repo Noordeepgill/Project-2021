@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh; 
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: fit-content;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 10px rgb(0 0 0 / 20%);
+}
+
+.quote-body{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.start-quote, .end-quote{
+    height: 1.5rem;
+    width: 2rem;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#quote{
+    font: 2rem 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+#author{
+    font: 22px 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    color: white;
+    font-style: italic;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 7rem;
+    height: 2.5rem;
+    box-shadow: 0 0.3rem rgb(121 121 121 / 65%);
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0.3rem rgb(121 121 121 / 65%);
+    outline: none;
+    font-family: 8px 'Arial' ;
+}
+
+.btn-custom{
+    color : white; 
+}
+
+.btn-custom:hover{
+    color: #F0E68C;
+}
+
+.btn-custom:active{
+    transform: translateY(2px);
+}
+
+.fa-twitter{
+    height: 2.5rem;
+    width: 4rem;
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+.fa-twitter:active{
+    transform: translateY(2px);
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+
+    .container{
+        width: 65%;
+    }
+
+    #quote{
+        font: 1rem 'Roboto', sans-serif;
+    }
+
+    #author{
+        font: 0.8rem 'Roboto', sans-serif;
+        font-style: italic;
+    }
+
+    .btn-container{
+        margin-top: 10px;
+    }
+
+    .start-quote, .end-quote{
+        height: 1.5rem;
+        width: 2rem;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .btn-custom:active{
+        transform: translateY(2px);
+    }
+
+    .fa-twitter:active{
+        transform: translateY(2px);
+    }
+  }
